@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            background-color: aquamarine;
+            color:black;
+        }
+
+        .navbar {
+            background-color: black;
+            /*position :sticky;
+            top:0%;*/
+            justify-content: space-evenly;
+            display: flex;
+
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+
+        }
+
+        .navbar a:hover {
+            background-color: none;
+            color: brown;
+        }
+
+        .ratantata-image {
+            width: 180px;
+            border-radius: 45%;
+            text-align: center;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        @media (max-width:576px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar a {
+                font-size: 0.6rem;
+                padding: 10px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar">
+    <p>
+    <a href="">childhood</a>
+    </p>
+    <p>
+    <a href="">early life</a>
+    </p>
+    <p>
+    <a href="">education</a>
+    </p>
+    <p>
+    <a href="">achievements</a>
+    </p>
+    </nav>
+    <div. style="text-align:center;"></div>
+    <img src="data:image/jpeg;base64,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"class="ratan tata-image"alt=""/>
+    <nav>
+    <h2 id="childhood">Childhood</h2>
+    <p>Ratan Tata was the son of Naval Tata, who was adopted by Ratanji Tata, son of Jamshedji Tata, the founder of the Tata Group. He graduated from Cornell University College of Architecture with a bachelor's degree in architecture.[6] He had also attended the Harvard Business School (HBS) Advanced Management program in 1975.[1] He joined the Tata Group in 1962,[7] starting on the shop floor of Tata Steel. He later succeeded J. R. D. Tata as chairman of Tata Sons upon the latter's retirement in 1991. During his tenure, the Tata Group acquired Tetley, Jaguar Land Rover, and Corus, in an attempt to turn Tata from a largely India-centric group into a global business.</p>
+    <h2 id="early life">Early life</h2>
+    <p>Ratan Tata was born in Bombay (now Mumbai), during the British Raj, into a Parsi Zoroastrian family, on 28 December 1937.[11] He was the son of Naval Tata (who was born in Surat and later adopted into the Tata family), and Soonoo Tata (the niece of Tata group founder Jamsetji Tata). Tata's biological grandfather, Hormusji Tata was a member of the Tata family by blood. In 1948, when Tata was 10, his parents separated, and he was subsequently raised and adopted by Navajbai Tata, his grandmother and widow of Ratanji Tata.[12] He had a younger brother Jimmy Tata[13] and a half-brother, Noel Tata, from Naval Tata's second marriage to his stepmother Simone Tata.</p>    Tata studied at the Campion School, Mumbai until 8th grade. He then continued his studies at the Cathedral and John Connon School in Mumbai, the Bishop Cotton School in Shimla, and the Riverdale Country School in New York City, from which he graduated in 1955.[14][15][16] After high school, Tata enrolled in Cornell University, from which he graduated with a bachelor's degree in architecture in 1962.[17][18] While at Cornell, Tata became a member of the Alpha Sigma Phi fraternity. In 1975, Tata enrolled in the Advanced Management Program at Harvard Business School (HBS).[19] In 2008, Tata gifted Cornell $50 million, becoming the largest international donor in the university's history.[20][21] Tata also donated $50 million to Harvard Business School, Harvard University to establish an executive center, which is now called Tata Hall that supports over 9,000 executive education students each year.
+    <h2 id="education">Education</h2>
+    <p>Tata was born in Bombay (now Mumbai), during the British Raj, into a Parsi Zoroastrian family, on 28 December 1937.[11] He was the son of Naval Tata (who was born in Surat and later adopted into the Tata family), and Soonoo Tata (the niece of Tata group founder Jamsetji Tata). Tata's biological grandfather, Hormusji Tata was a member of the Tata family by blood. In 1948, when Tata was 10, his parents separated, and he was subsequently raised and adopted by Navajbai Tata, his grandmother and widow of Ratanji Tata.[12] He had a younger brother Jimmy Tata[13] and a half-brother, Noel Tata, from Naval Tata's second marriage to his stepmother Simone Tata.
+    Tata studied at the Campion School, Mumbai until 8th grade. He then continued his studies at the Cathedral and John Connon School in Mumbai, the Bishop Cotton School in Shimla, and the Riverdale Country School in New York City, from which he graduated in 1955.[14][15][16] After high school, Tata enrolled in Cornell University, from which he graduated with a bachelor's degree in architecture in 1962.[17][18] While at Cornell, Tata became a member of the Alpha Sigma Phi fraternity. In 1975, Tata enrolled in the Advanced Management Program at Harvard Business School (HBS).[19] In 2008, Tata gifted Cornell $50 million, becoming the largest international donor in the university's history.[20][21] Tata also donated $50 million to Harvard Business School, Harvard University to establish an executive center, which is now called Tata Hall that supports over 9,000 executive education students each year.</p>
+    
+    
+    <h2 id="achievements">Achievements</h2>
+    <p>Ratan Tata received the Padma Bhushan in 2000 and Padma Vibhushan in 2008, the third and second highest civilian honours awarded by the Government of India.[88] Tata also received various state civilian honours such as 'Maharashtra Bhushan' in 2006 for his work in the public administration in Maharashtra and 'Assam Baibhav' in 2021 for his contribution towards furthering cancer care in Assam.[89]</p>
+
+    </nav>
+    </body>
+</html>
